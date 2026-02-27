@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Omnibees - Metas de Produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="logo">
+                <span class="logo-icon">🐝</span>
+                <span class="logo-text">Omnibees</span>
+            </div>
+            <span class="nav-title">Roadmap de Produtos</span>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-filter active" data-filter="all">Todos</button>
+            <button class="btn-filter" data-filter="priorizados">Priorizados</button>
+            <button class="btn-filter" data-filter="nao-priorizados">Backlog</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Summary Cards -->
+        <section class="summary-section">
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <div class="card-icon beehive">🔧</div>
+                    <div class="card-info">
+                        <span class="card-number" id="total-items">0</span>
+                        <span class="card-label">Total de Itens</span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon meta1">🎯</div>
+                    <div class="card-info">
+                        <span class="card-number" id="meta1-count">0</span>
+                        <span class="card-label">META 1</span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon meta2">🚀</div>
+                    <div class="card-info">
+                        <span class="card-number" id="meta2-count">0</span>
+                        <span class="card-label">META 2</span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon meta3">⭐</div>
+                    <div class="card-info">
+                        <span class="card-number" id="meta3-count">0</span>
+                        <span class="card-label">META 3</span>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon future">🔮</div>
+                    <div class="card-info">
+                        <span class="card-number" id="future-count">0</span>
+                        <span class="card-label">META FUTURA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section" id="priorizados-section">
+            <h2 class="section-title">
+                <span class="title-icon">📋</span>
+                Temas Priorizados
+            </h2>
+
+            <!-- Meta Tabs -->
+            <div class="meta-tabs">
+                <button class="meta-tab active" data-meta="meta1">META 1</button>
+                <button class="meta-tab" data-meta="meta2">META 2</button>
+                <button class="meta-tab" data-meta="meta3">META 3</button>
+                <button class="meta-tab" data-meta="future">META FUTURA</button>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be injected here -->
+            </div>
+        </section>
+
+        <!-- Backlog Section -->
+        <section class="backlog-section" id="backlog-section">
+            <h2 class="section-title">
+                <span class="title-icon">📦</span>
+                Backlog - Temas Não Priorizados
+            </h2>
+            <div class="backlog-grid" id="backlog-grid">
+                <!-- Backlog items will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Omnibees Product Roadmap &copy; 2026 | Atualizado em <span id="last-update"></span></p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
