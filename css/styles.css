@@ -5,6 +5,103 @@
     box-sizing: border-box;
 }
 
+/* Login Screen */
+.login-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+    padding: 1rem;
+}
+
+.login-card {
+    background: #FFFFFF;
+    border-radius: 1rem;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-card .logo-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.login-card .logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #F5A623, #FFD580);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.login-title {
+    font-size: 1.25rem;
+    color: #1E293B;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+.login-subtitle {
+    color: #64748B;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #E2E8F0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: #F5A623;
+    box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.2);
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: #F5A623;
+    border: none;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+}
+
+.login-button:hover {
+    background: #E09000;
+    transform: translateY(-1px);
+}
+
+.login-error {
+    color: #EF4444;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    min-height: 1.25rem;
+}
+
+.app-content.hidden,
+.login-screen.hidden {
+    display: none !important;
+}
+
 :root {
     /* Omnibees Brand Colors */
     --primary: #F5A623;
